@@ -1,0 +1,97 @@
+.reg{
+    height: 1000px;
+    width: 100%;
+    padding: 50px;
+}
+
+h2{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    margin: 3px;
+    padding: 5px 7px;
+    text-shadow: #3c4fe0 0 3px 7px inset;
+    box-shadow: #3c4fe0 0 3px 7px inset;
+    text-decoration:underline;
+    border-radius: 10%;
+}
+
+.registration{
+    height: 70%;
+    width: 50%;
+    margin: 100px auto;
+    background: rgba(255, 255, 255, 0.5);
+    color: black;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 7%;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.registration input[type=text],.registration input[type=password],.registration input[type="email"],
+.registration input[type="tel"]{
+    width: 240px;  
+    border: none; 
+    outline: none;
+    background: none;
+    font-size: 18px;
+    padding: 5px;
+    border-bottom: 1px solid #4090e2;
+}
+.submit-btn{
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    width: 40%;
+    height: 48px;
+    color: #fff;
+    background-image: linear-gradient(150deg,#5468ff,#5adaff);
+    display: inline-flex;
+    margin: 20px;
+    margin-left: 55px;
+    border-radius: 6px;
+    padding: 0 16px;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.submit-btn:focus {
+    box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+  
+.submit-btn:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+  
+.submit-btn:active {
+    box-shadow: #3c4fe0 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+@media(max-width: 720px) {
+    .search{
+        width: 10px;
+    }
+    .registration{
+        width: 70%;
+    }
+}
+@media(max-width: 512px){
+    .registration{
+        width:90%
+    }
+    .registration input[type=text],.registration input[type=password],.registration input[type="email"],
+    .registration input[type="tel"]{
+        width: 100%;
+    }
+    h2{
+        width: 70%;
+    }
+}

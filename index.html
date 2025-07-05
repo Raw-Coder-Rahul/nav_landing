@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vayu Essence</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+</head>
+<body>
+    <div class="landing-page">
+        <header class="header">
+            <div class="logo">
+                <img src="images/Vayu Essence.png" alt="Vayu Essence Logo">
+            </div>
+            <div class="nav">
+                <div class="nav">
+                    <a href="index.html" class="home">Home</a>
+                    <a href="#services" class="service" onclick="tlicktlick()">Services</a>
+                    <a href="#about" class="about" onclick="clickclick()">About</a>
+                    <a href="#contact" class="contact" onclick="clickclick()">Contact</a>
+                </div>
+            </div>
+            <form action="" class="search">
+                <input type="text" class="search-btn2" placeholder="Search">
+                <button class="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+            <div class="toggle_btn" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="dropdown_menu">
+                <a href="index.html" class="home">Home</a>
+                <a href="#services" class="service">Services</a>
+                <a href="#about" class="about">About</a>
+                <a href="#contact" class="contact">Contact</a>
+            </div>            
+        </header>
+        <main class="main">
+            <div class="tag">
+                <h1>Welcome to Vayu Essence</h1>
+                <p class="tag-line">"Flow with the winds of change."</p>
+            </div>
+        
+            <div class="promotion">
+                <h2>Up to 30% Off on Exclusive Tours!</h2>
+                <p>Don't miss out on this limited-time offer. Register now to unlock unforgettable experiences!</p>
+                <a href="Register.html"><button class="register-btn" role="button">Register Now</button></a>
+            </div>
+        
+            <section id="about" class="about-btn">
+                <input type="checkbox" id="ch" style="display: none">
+                <h2>About Us</h2>
+                <h3>Vayu Essence: Crafted for You</h3>
+                <p>Vayu Essence is your gateway to harmony, vitality, and transformation. Embrace the energy of the winds and soar into a life of balance and wellness...</p>
+                <label for="ch" class="about2" id="read-more-label less">Read more</label>
+                <div class="about-info">
+                    <p>At Vayu Essence, we believe in the transformative power of nature and the boundless energy of the winds to guide you toward a life of purpose and tranquility.
+                        Our philosophy is rooted in the idea that true wellness comes from balancing the body, mind, and soul. Whether you're seeking rejuvenation, clarity, or a renewed 
+                        sense of vitality, Vayu Essence offers a sanctuary of inspiration and tools to help you reconnect with your inner strength. Let the winds carry you toward a vibrant, 
+                        harmonious existence, where wellness isn't just a goal—it's a way of life.</p>
+                    <label for="ch" id="show-less-label less" class="about2">Show less</label>
+                </div>
+                <p>Register today and enjoy the ultimate tour experience.</p>
+                <a href="Discover.html"><button class="about2" role="button">Discover More</button></a>
+            </section>
+            
+        
+            <section id="services" class="services">
+                <h2>Our Services</h2>
+                <ul>
+                    <li>Guided Meditation Retreats</li>
+                    <li>Personalized Travel Planning</li>
+                    <li>Luxury Wellness Tours</li>
+                    <li>Corporate Getaways</li>
+                </ul>
+            </section>
+            <section id="contact" class="contact">
+                <h2>Contact Us</h2>
+                <p>For inquiries, please email us at <a href="mailto:info@vayuessence.com">info@vayuessence.com</a></p>
+                <p>Follow us on social media:</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/VayuEssence" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/VayuEssence" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.twitter.com/VayuEssence" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </section>
+        </main>
+        
+        <footer class="footer">
+            <p>&copy; 2024 Vayu Essence. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
+
+<script>
+    function clickclick(){
+        const checkbox = document.getElementById('ch');
+        checkbox.checked = !checkbox.checked;
+    }
+    function toggleMenu() {
+        const dropdownMenu = document.querySelector('.dropdown_menu');
+        dropdownMenu.classList.toggle('active');
+    }
+</script>
